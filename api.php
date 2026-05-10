@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
- $apiKey = "AIzaSyDCXy6ja1clZNFjW8wSXBi4fJh3y8Lxgo4";
+ $apiKey = "YOUR_API_KEY_HIDDEN_FOR_GITHUB";
 
 $inputData = json_decode(file_get_contents('php://input'), true);
 
