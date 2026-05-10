@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>AI Quiz Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>AI Quiz Master</h1>
+            <p>Professional assessment generation powered by AI.</p>
+        </header>
+
+        <main>
+            <div class="card input-card">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="topic">Subject / Topic</label>
+                        <input type="text" id="topic" placeholder="e.g., Quantum Computing">
+                    </div>
+                    <div class="input-group">
+                        <label for="count">Question Count</label>
+                        <input type="number" id="count" value="10" min="1" max="100">
+                    </div>
+                </div>
+                <button id="generate-btn">Generate Assessment</button>
+            </div>
+
+            <div id="loading-spinner" class="hidden">
+                <div class="spinner"></div>
+                <p>AI is analyzing the topic and writing your questions...</p>
+            </div>
+
+            <div id="error-message" class="hidden"></div>
+
+            <div id="results-card" class="card hidden">
+                <h2>Generated Assessment</h2>
+                <div id="output-text"></div>
+                <button id="reset-btn" class="secondary-btn">Start New Assessment</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
